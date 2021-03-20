@@ -36,10 +36,6 @@
     fill: #e0e0e0;
 }
 
-/*svr:not(:root){
-    overflow: hidden;
-}*/
-
 .nav{
     z-index: 10;
     background-color: #fff;
@@ -49,9 +45,36 @@
     transform: translate(-300px, 0);
     transition: transform 0.3s ease;
 }
+
+.nav.open{
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+}
+
+.nav_list{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.nav_list li{
+    display: list-item;
+    border-bottom: 1px solid #e0e0e0;
+    width: 100%;
+    text-align: left;
+    padding: 1em;
+}
+
+.nav_list li a{
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
 .main_image{
     width: 100%;
 }
+
 .main_image img{
     width: 100%;
 }
