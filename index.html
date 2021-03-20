@@ -11,52 +11,77 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
-        <header>
-            <section>
-                <i class="fas fa-route" style="font-size: 55px"></i>
-                <h2>Skywalkers</h2>
+        <header class="header">
+            <section class="header_inner">
+                <i class="fas fa-route"></i>
+                <h1 class="header_title">Skywalkers</h1>
+                <a id="menu" class="header_menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z"/>
+                    </svg>
+                </a>
             </section>
-            <nav>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Countries</a></li>
-                    <li><a href="#">Hot Sales</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </nav>
         </header>
+
+        <nav class="nav">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Countries</a></li>
+                <li><a href="#">Hot Sales</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+
         <main>
-            <section>
-                <img src="https://i.pinimg.com/originals/87/3a/65/873a65f5c5332813fa9ad51ec3d9ad5e.jpg" alt="Amazing Landscape">
-                <p>Welcome to</p>
-                <h1>Welcome to awesome travels</h1>
-                <button>Learn more</button>
+            <section class="main_image">
+                <img src="https://i.ibb.co/XpV87QX/ksnip-20210319-221416.png" alt="Amazing Landscape">
+                <!--<img src="https://i.pinimg.com/originals/87/3a/65/873a65f5c5332813fa9ad51ec3d9ad5e.jpg" alt="Amazing Landscape">-->
+                <div class="centered">
+                    <p>Welcome to</p>
+                    <h1>Welcome to awesome travels</h1>
+                    <div class="centerButton">
+                        <button>Learn more</button>
+                    </div>
+                </div>
             </section>
-            <article>
+            <article class="container">
                 <h2>Everyone enjoys traveling</h2>
-                <section>
+                <section class="card_container">
                     <div class="card">
-                        <i class="fas fa-ticket-alt" style="font-size: 55px"></i>
-                        <div class="container">
-                            <p>Find the best prices for your next trip</p>
-                        </div>
+                        <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCINCgkgdmlld0JveD0iMCAwIDUxMi4wMDUgNTEyLjAwNSIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTEyLjAwNSA1MTIuMDA1OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQo8Zz4NCgk8Zz4NCgkJPGc+DQoJCQk8cGF0aCBkPSJNNTExLjUxMywyMjMuOTA0TDQ1Mi41MDgsNDIuMzI2Yy0xLjcwOC01LjI1MS03LjM0OC04LjEyNS0xMi42MDItNi40Mkw2LjkxMiwxNzYuNjEyDQoJCQkJYy01LjI1MiwxLjcwNy04LjEyNiw3LjM0OS02LjQyLDEyLjYwMmwyNy45Myw4NS45NDljLTAuMDA4LDAuMTY4LTAuMDI1LDAuMzMzLTAuMDI1LDAuNTAzdjE5MC45MjVjMCw1LjUyMiw0LjQ3OCwxMCwxMCwxMA0KCQkJCUg0OTMuNjhjNS41MjIsMCwxMC00LjQ3OCwxMC0xMFYyNzUuNjY2YzAtNS41MjItNC40NzgtMTAtMTAtMTBoLTc4LjMybDg5LjczNC0yOS4xNg0KCQkJCUM1MTAuMzQ1LDIzNC43OTksNTEzLjIxOSwyMjkuMTU3LDUxMS41MTMsMjIzLjkwNHogTTQ4My42NzksMjg1LjY2NnYxNzAuOTI1SDQ4LjM5NlYyODUuNjY2aDU1LjM5MnYxMTEuNDA4DQoJCQkJYzAsNS41MjIsNC40NzgsMTAsMTAsMTBjNS41MjIsMCwxMC00LjQ3OCwxMC0xMFYyODUuNjY2aDIyOC40NDFINDgzLjY3OXogTTM1MC42NDUsMjY1LjY2Nkg0Ni4zNjVsLTIzLjc2Mi03My4xMjNsNTIuNzExLTE3LjEyOQ0KCQkJCWwyMC4xNjIsNjEuMjc2YzEuMzg1LDQuMjA4LDUuMjk2LDYuODc3LDkuNDk3LDYuODc3YzEuMDM2LDAsMi4wOS0wLjE2MiwzLjEyOC0wLjUwNGM1LjI0Ni0xLjcyNyw4LjEtNy4zNzgsNi4zNzMtMTIuNjI1DQoJCQkJbC0yMC4xMzktNjEuMjA2TDQzNi41NzcsNTguMDE3bDUyLjgyNSwxNjIuNTU4TDM1MC42NDUsMjY1LjY2NnoiLz4NCgkJCTxwYXRoIGQ9Ik00MjEuNDA1LDEwMS44NDljLTEuNzA4LTUuMjUxLTcuMzQ5LTguMTI0LTEyLjYwMi02LjQybC0yNjAuNzI4LDg0LjcyN2MtNS4yNTIsMS43MDctOC4xMjYsNy4zNDktNi40MiwxMi42MDINCgkJCQljMS4zNzQsNC4yMjYsNS4yOTMsNi45MTIsOS41MDksNi45MTJjMS4wMjQsMCwyLjA2Ni0wLjE1OSwzLjA5My0wLjQ5MmwyNjAuNzI4LTg0LjcyNw0KCQkJCUM0MjAuMjM3LDExMi43NDQsNDIzLjExMiwxMDcuMTAyLDQyMS40MDUsMTAxLjg0OXoiLz4NCgkJCTxwYXRoIGQ9Ik0zNzcuNDM0LDE2Ni44MDRsNDkuMzUyLTE2LjAzN2M1LjI1Mi0xLjcwNyw4LjEyNi03LjM0OSw2LjQyLTEyLjYwMmMtMS43MDgtNS4yNTItNy4zNDktOC4xMjUtMTIuNjAyLTYuNDINCgkJCQlsLTQ5LjM1MiwxNi4wMzdjLTUuMjUyLDEuNzA3LTguMTI2LDcuMzQ5LTYuNDIsMTIuNjAyYzEuMzc0LDQuMjI2LDUuMjkzLDYuOTEyLDkuNTA5LDYuOTEyDQoJCQkJQzM3NS4zNjUsMTY3LjI5NiwzNzYuNDA4LDE2Ny4xMzcsMzc3LjQzNCwxNjYuODA0eiIvPg0KCQkJPHBhdGggZD0iTTQxOS4xNDMsMjEyLjc0MWMxLjM3NCw0LjIyNiw1LjI5Myw2LjkxMiw5LjUwOSw2LjkxMmMxLjAyMywwLDIuMDY2LTAuMTU5LDMuMDkzLTAuNDkybDE1LjYxNy01LjA3NQ0KCQkJCWM1LjI1Mi0xLjcwNyw4LjEyNy03LjM0OSw2LjQyLTEyLjYwMmMtMS43MDgtNS4yNTItNy4zNDgtOC4xMjYtMTIuNjAyLTYuNDJsLTE1LjYxNyw1LjA3NQ0KCQkJCUM0MjAuMzExLDIwMS44NDYsNDE3LjQzNiwyMDcuNDg4LDQxOS4xNDMsMjEyLjc0MXoiLz4NCgkJCTxwYXRoIGQ9Ik0zOTAuNjg1LDIxMS40NzNsLTE1LjYxOCw1LjA3NWMtNS4yNTIsMS43MDctOC4xMjcsNy4zNDktNi40MiwxMi42MDJjMS4zNzMsNC4yMjYsNS4yOTMsNi45MTIsOS41MDksNi45MTINCgkJCQljMS4wMjMsMCwyLjA2NS0wLjE1OSwzLjA5My0wLjQ5MmwxNS42MTgtNS4wNzVjNS4yNTItMS43MDcsOC4xMjYtNy4zNDksNi40Mi0xMi42MDINCgkJCQlDNDAxLjU4MSwyMTIuNjQxLDM5NS45NDQsMjA5Ljc2OCwzOTAuNjg1LDIxMS40NzN6Ii8+DQoJCQk8cGF0aCBkPSJNMjUxLjEzMiwxODYuODE3bC05MS4yNTUsMjkuNjU0Yy01LjI1MiwxLjcwNy04LjEyNyw3LjM0OS02LjQyLDEyLjYwMmMxLjM3NCw0LjIyNiw1LjI5Myw2LjkxMiw5LjUwOSw2LjkxMg0KCQkJCWMxLjAyMywwLDIuMDY2LTAuMTU5LDMuMDkzLTAuNDkybDkxLjI1NS0yOS42NTRjNS4yNTItMS43MDcsOC4xMjYtNy4zNDksNi40Mi0xMi42MDINCgkJCQlDMjYyLjAyNSwxODcuOTg1LDI1Ni4zODQsMTg1LjExMiwyNTEuMTMyLDE4Ni44MTd6Ii8+DQoJCQk8cGF0aCBkPSJNMTEzLjc4OCw0MjAuMzY0Yy01LjUyMiwwLTEwLDQuNDc4LTEwLDEwdjMuOTE2YzAsNS41MjIsNC40NzgsMTAsMTAsMTBjNS41MjIsMCwxMC00LjQ3OCwxMC0xMHYtMy45MTYNCgkJCQlDMTIzLjc4OCw0MjQuODQyLDExOS4zMSw0MjAuMzY0LDExMy43ODgsNDIwLjM2NHoiLz4NCgkJCTxwYXRoIGQ9Ik0xNjEuNTU0LDMyMi42NjNjMCw1LjUyMiw0LjQ3OCwxMCwxMCwxMGgyNzQuMTQ4YzUuNTIyLDAsMTAtNC40NzgsMTAtMTBjMC01LjUyMi00LjQ3OC0xMC0xMC0xMEgxNzEuNTU0DQoJCQkJQzE2Ni4wMzIsMzEyLjY2MywxNjEuNTU0LDMxNy4xNCwxNjEuNTU0LDMyMi42NjN6Ii8+DQoJCQk8cGF0aCBkPSJNNDQ1LjcwMywzNTAuODQ3SDM5My44MWMtNS41MjIsMC0xMCw0LjQ3OC0xMCwxMGMwLDUuNTIyLDQuNDc4LDEwLDEwLDEwaDUxLjg5M2M1LjUyMiwwLDEwLTQuNDc4LDEwLTEwDQoJCQkJQzQ1NS43MDMsMzU1LjMyNSw0NTEuMjI1LDM1MC44NDcsNDQ1LjcwMywzNTAuODQ3eiIvPg0KCQkJPHBhdGggZD0iTTQ0NS43MDMsNDE3LjQyN2gtMTYuNDIyYy01LjUyMiwwLTEwLDQuNDc4LTEwLDEwYzAsNS41MjIsNC40NzgsMTAsMTAsMTBoMTYuNDIyYzUuNTIyLDAsMTAtNC40NzgsMTAtMTANCgkJCQlDNDU1LjcwMyw0MjEuOTA1LDQ1MS4yMjUsNDE3LjQyNyw0NDUuNzAzLDQxNy40Mjd6Ii8+DQoJCQk8cGF0aCBkPSJNMzkyLjYwOCw0MTcuNDI3aC0xNi40MjFjLTUuNTIyLDAtMTAsNC40NzgtMTAsMTBjMCw1LjUyMiw0LjQ3OCwxMCwxMCwxMGgxNi40MjFjNS41MjIsMCwxMC00LjQ3OCwxMC0xMA0KCQkJCUM0MDIuNjA4LDQyMS45MDUsMzk4LjEzMSw0MTcuNDI3LDM5Mi42MDgsNDE3LjQyN3oiLz4NCgkJCTxwYXRoIGQ9Ik0yNjcuNTA3LDM1MC44NDdoLTk1Ljk1MmMtNS41MjIsMC0xMCw0LjQ3OC0xMCwxMGMwLDUuNTIyLDQuNDc4LDEwLDEwLDEwaDk1Ljk1MmM1LjUyMiwwLDEwLTQuNDc4LDEwLTEwDQoJCQkJQzI3Ny41MDcsMzU1LjMyNSwyNzMuMDI5LDM1MC44NDcsMjY3LjUwNywzNTAuODQ3eiIvPg0KCQk8L2c+DQoJPC9nPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPC9zdmc+DQo=" alt="tickets"/>
+                        <p>Find the best prices for your next trip</p>
                     </div>
                     <div class="card">
-                        <i class="fas fa-concierge-bell" style="font-size: 55px"></i>
+                        <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgNDgwIDQ4MCIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNDgwIDQ4MDsiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPGc+DQoJPGc+DQoJCTxwYXRoIGQ9Ik00NTYsNDIwSDI4NS40MTZsLTkuNi0yNEg0NTZjNC40MTgsMCw4LTMuNTgyLDgtOHYtMTZjLTAuMDMyLTEwLjItNi41MjEtMTkuMjYxLTE2LjE2OC0yMi41NzYNCgkJCUM0NDQuMjYxLDI0MC4zNCwzNTcuMDU3LDE1Mi41MjgsMjQ4LDE0OC4yVjEzMmgxNmMxMy4yNTUsMCwyNC0xMC43NDUsMjQtMjRzLTEwLjc0NS0yNC0yNC0yNGgtNDhjLTEzLjI1NSwwLTI0LDEwLjc0NS0yNCwyNA0KCQkJczEwLjc0NSwyNCwyNCwyNGgxNnYxNi4yYy0xMDkuMDU3LDQuMzI4LTE5Ni4yNjEsOTIuMTQtMTk5LjgzMiwyMDEuMjI0QzIyLjUyMSwzNTIuNzM5LDE2LjAzMiwzNjEuOCwxNiwzNzJ2MTYNCgkJCWMwLDQuNDE4LDMuNTgyLDgsOCw4aDE4MC4xODRsLTkuNiwyNEgyNGMtMTMuMjU1LDAtMjQsMTAuNzQ1LTI0LDI0djE2YzAsNC40MTgsMy41ODIsOCw4LDhoNDY0YzQuNDE4LDAsOC0zLjU4Miw4LTh2LTE2DQoJCQlDNDgwLDQzMC43NDUsNDY5LjI1NSw0MjAsNDU2LDQyMHogTTIxNiwxMTZjLTQuNDE4LDAtOC0zLjU4Mi04LThzMy41ODItOCw4LThoNDhjNC40MTgsMCw4LDMuNTgyLDgsOHMtMy41ODIsOC04LDhIMjE2eiBNMjQwLDE2NA0KCQkJYzEwMi44NzcsMC4xMjQsMTg3LjQyMiw4MS4yMTgsMTkxLjgzMiwxODRINDguMTY4QzUyLjU3OCwyNDUuMjE4LDEzNy4xMjMsMTY0LjEyNCwyNDAsMTY0eiBNMzIsMzgwdi04YzAtNC40MTgsMy41ODItOCw4LThoNDAwDQoJCQljNC40MTgsMCw4LDMuNTgyLDgsOHY4SDMyeiBNMjY4LjE4NCw0MjBoLTU2LjM2OGw5LjYtMjRoMzcuMTY4TDI2OC4xODQsNDIweiBNNDY0LDQ1MkgxNnYtOGMwLTQuNDE4LDMuNTgyLTgsOC04aDQzMg0KCQkJYzQuNDE4LDAsOCwzLjU4Miw4LDhWNDUyeiIvPg0KCTwvZz4NCjwvZz4NCjxnPg0KCTxnPg0KCQk8cGF0aCBkPSJNMTU2LjE4NCwyMDEuMmMtMzguMzU4LDIwLjc1NC02Ny42NCw1NS4wMTQtODIuMTY4LDk2LjEzNmwxNS4wODgsNS4zMjhjMTMuMjE0LTM3LjM4NCwzOS44MzktNjguNTMxLDc0LjcxMi04Ny40DQoJCQlMMTU2LjE4NCwyMDEuMnoiLz4NCgk8L2c+DQo8L2c+DQo8Zz4NCgk8Zz4NCgkJPHBhdGggZD0iTTE4OS42ODgsMTg3LjI4OGMtNS42NzUsMS42OTctMTEuMjYsMy42NzgtMTYuNzM2LDUuOTM2bDYuMDk2LDE0Ljc5MmM0Ljk3My0yLjA1MSwxMC4wNDYtMy44NSwxNS4yLTUuMzkyDQoJCQlMMTg5LjY4OCwxODcuMjg4eiIvPg0KCTwvZz4NCjwvZz4NCjxnPg0KCTxnPg0KCQk8cmVjdCB4PSIyMzIiIHk9IjEyIiB3aWR0aD0iMTYiIGhlaWdodD0iNDgiLz4NCgk8L2c+DQo8L2c+DQo8Zz4NCgk8Zz4NCgkJPHJlY3QgeD0iMTI4IiB5PSIxMDAiIHdpZHRoPSI0OCIgaGVpZ2h0PSIxNiIvPg0KCTwvZz4NCjwvZz4NCjxnPg0KCTxnPg0KCQk8cmVjdCB4PSIxNjcuMDM3IiB5PSIyNy4wMjgiIHRyYW5zZm9ybT0ibWF0cml4KDAuNzA3MSAtMC43MDcxIDAuNzA3MSAwLjcwNzEgMTUuMTg1MSAxMzguNzE1NSkiIHdpZHRoPSIxNiIgaGVpZ2h0PSI0OCIvPg0KCTwvZz4NCjwvZz4NCjxnPg0KCTxnPg0KCQk8cmVjdCB4PSIyODAuOTY2IiB5PSI0My4wMSIgdHJhbnNmb3JtPSJtYXRyaXgoMC43MDcxIC0wLjcwNzEgMC43MDcxIDAuNzA3MSA1My4yNTI5IDIzMC41ODQzKSIgd2lkdGg9IjQ4IiBoZWlnaHQ9IjE2Ii8+DQoJPC9nPg0KPC9nPg0KPGc+DQoJPGc+DQoJCTxyZWN0IHg9IjMwNCIgeT0iMTAwIiB3aWR0aD0iNDgiIGhlaWdodD0iMTYiLz4NCgk8L2c+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8L3N2Zz4NCg==" alt="hotel bell"/>
                         <p>The best hotels around the world</p>
                     </div>
                     <div class="card">
-                        <i class="fas fa-car" style="font-size: 55px"></i>
+                        <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgNTEyIDUxMiIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTEyIDUxMjsiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPGc+DQoJPGc+DQoJCTxwYXRoIGQ9Ik0xNDYuMjE5LDMzMy43ODFMOTQuNzIsMjgyLjI4M2MtMTAuMDkxLTEwLjA2OS0yMy40NjctMTUuNjE2LTM3LjcxNy0xNS42MTZIMjEuMzMzYy01Ljg4OCwwLTEwLjY2Nyw0Ljc3OS0xMC42NjcsMTAuNjY3DQoJCQlTMTUuNDQ1LDI4OCwyMS4zMzMsMjg4aDM1LjY2OWM4LjQwNSwwLDE2LjY2MSwzLjQxMywyMi42MTMsOS4zNjVsMzMuMzAxLDMzLjMwMUgyMS4zMzNjLTUuODg4LDAtMTAuNjY3LDQuNzc5LTEwLjY2NywxMC42NjcNCgkJCWMwLDUuODg4LDQuNzc5LDEwLjY2NywxMC42NjcsMTAuNjY3aDExNy4zMzNjNC4zMDksMCw4LjE5Mi0yLjYwMyw5Ljg1Ni02LjU5MlMxNDkuMjY5LDMzNi44MzIsMTQ2LjIxOSwzMzMuNzgxeiIvPg0KCTwvZz4NCjwvZz4NCjxnPg0KCTxnPg0KCQk8cGF0aCBkPSJNMTM4LjY2NywzODRjLTUuODg4LDAtMTAuNjY3LDQuNzc5LTEwLjY2NywxMC42Njd2MzJjMCw1Ljg4OC00LjgsMTAuNjY3LTEwLjY2NywxMC42NjdoLTY0DQoJCQljLTUuODY3LDAtMTAuNjY3LTQuNzc5LTEwLjY2Ny0xMC42NjdWMzg0YzAtNS44ODgtNC43NzktMTAuNjY3LTEwLjY2Ny0xMC42NjdTMjEuMzMzLDM3OC4xMTIsMjEuMzMzLDM4NHY0Mi42NjcNCgkJCWMwLDE3LjY0MywxNC4zNTcsMzIsMzIsMzJoNjRjMTcuNjQzLDAsMzItMTQuMzU3LDMyLTMydi0zMkMxNDkuMzMzLDM4OC43NzksMTQ0LjU1NSwzODQsMTM4LjY2NywzODR6Ii8+DQoJPC9nPg0KPC9nPg0KPGc+DQoJPGc+DQoJCTxwYXRoIGQ9Ik00NjMuNTk1LDIwMy44ODNjLTI5LjM5Ny0xNS4zODEtOTUuMzgxLTIyLjU0OS0yMDcuNTk1LTIyLjU0OXMtMTc4LjE5Nyw3LjE2OC0yMDcuNTk1LDIyLjU0OQ0KCQkJQzE0LjkxMiwyMjEuMzc2LDAsMjUwLjYwMywwLDI5OC42NjdjMCw0Ni4yMDgsMTAuNTgxLDg2LjQsMTEuMDI5LDg4LjA4NWMxLjIzNyw0LjY3Miw1LjQ2MSw3LjkxNSwxMC4zMDQsNy45MTVoOTMuNDgzDQoJCQlsNDAuNDA1LDIwLjIwM2MxLjQ5MywwLjc0NywzLjEzNiwxLjEzMSw0Ljc3OSwxLjEzMWgxOTJjMS42NDMsMCwzLjI4NS0wLjM4NCw0Ljc1Ny0xLjEzMWw0MC40MjctMjAuMjAzaDkzLjQ4Mw0KCQkJYzQuODQzLDAsOS4wNjctMy4yNDMsMTAuMzA0LTcuOTE1YzAuNDQ4LTEuNjg1LDExLjAyOS00MS44NzcsMTEuMDI5LTg4LjA4NUM1MTIsMjUwLjYwMyw0OTcuMDg4LDIyMS4zNzYsNDYzLjU5NSwyMDMuODgzeg0KCQkJIE00ODIuMjQsMzczLjMzM2gtODcuNTUyYy0xLjY2NCwwLTMuMzA3LDAuMzg0LTQuNzc5LDEuMTMxbC00MC40MjcsMjAuMjAzSDE2Mi41MTdsLTQwLjQwNS0yMC4yMDMNCgkJCWMtMS40OTMtMC43NDctMy4xMzYtMS4xMzEtNC43NzktMS4xMzFIMjkuNzgxYy0yLjk2NS0xMy41ODktOC40NDgtNDIuOTQ0LTguNDQ4LTc0LjY2N2MwLTQwLjE3MSwxMC43MDktNjIuMTY1LDM2LjkyOC03NS44ODMNCgkJCWMyNS41NTctMTMuMzU1LDkyLjA3NS0yMC4xMTcsMTk3LjczOS0yMC4xMTdzMTcyLjE4MSw2Ljc2MywxOTcuNzM5LDIwLjExN2MyNi4yMTksMTMuNzE3LDM2LjkyOCwzNS43MTIsMzYuOTI4LDc1Ljg4Mw0KCQkJQzQ5MC42NjcsMzMwLjM4OSw0ODUuMTg0LDM1OS43NDQsNDgyLjI0LDM3My4zMzN6Ii8+DQoJPC9nPg0KPC9nPg0KPGc+DQoJPGc+DQoJCTxwYXRoIGQ9Ik00OTAuNjY3LDMzMC42NjdoLTkxLjU4NGwzMy4yOC0zMy4zMDFjNS45NzMtNS45NTIsMTQuMjA4LTkuMzY1LDIyLjYzNS05LjM2NWgzNS42NjljNS44ODgsMCwxMC42NjctNC43NzksMTAuNjY3LTEwLjY2Nw0KCQkJcy00Ljc3OS0xMC42NjctMTAuNjY3LTEwLjY2N2gtMzUuNjY5Yy0xNC4yNTEsMC0yNy42MjcsNS41NDctMzcuNzE3LDE1LjYxNmwtNTEuNDk5LDUxLjQ5OQ0KCQkJYy0zLjAyOSwzLjA1MS0zLjk0Nyw3LjYzNy0yLjMwNCwxMS42MjdzNS41NDcsNi41OTIsOS44NTYsNi41OTJoMTE3LjMzM2M1Ljg4OCwwLDEwLjY2Ny00Ljc3OSwxMC42NjctMTAuNjY3DQoJCQlDNTAxLjMzMywzMzUuNDQ1LDQ5Ni41NTUsMzMwLjY2Nyw0OTAuNjY3LDMzMC42Njd6Ii8+DQoJPC9nPg0KPC9nPg0KPGc+DQoJPGc+DQoJCTxwYXRoIGQ9Ik0zODIuOTk3LDI3Mi44MTFjLTEuNzcxLTMuNzU1LTUuNTI1LTYuMTQ0LTkuNjY0LTYuMTQ0SDEzOC42NjdjLTQuMTM5LDAtNy44OTMsMi4zODktOS42NjQsNi4xNDQNCgkJCWMtMS43NDksMy43MzMtMS4xOTUsOC4xNzEsMS40NzIsMTEuMzQ5bDUzLjMzMyw2NGMyLjAyNywyLjQzMiw1LjAzNSwzLjg0LDguMTkyLDMuODRoMTI4YzMuMTU3LDAsNi4xNjUtMS40MDgsOC4xOTItMy44NA0KCQkJbDUzLjMzMy02NEMzODQuMTkyLDI4MC45ODEsMzg0Ljc0NywyNzYuNTQ0LDM4Mi45OTcsMjcyLjgxMXogTTMxNC45ODcsMzMwLjY2N0gxOTYuOTkyTDE2MS40MjksMjg4aDE4OS4xMkwzMTQuOTg3LDMzMC42Njd6Ii8+DQoJPC9nPg0KPC9nPg0KPGc+DQoJPGc+DQoJCTxwYXRoIGQ9Ik00NjguNDU5LDIwOS4wODhjLTEyLjEzOS0yNy45MDQtNTIuNzU3LTExOS44NzItNjYuODgtMTMxLjg4M2MtMTcuNi0xNC45NTUtNjguMDExLTIzLjg3Mi0xMzQuOTEyLTIzLjg3MmgtMjEuMzMzDQoJCQljLTY2LjkwMSwwLTExNy4zMTIsOC45MTctMTM0LjkxMiwyMy44NTFjLTE0LjEyMywxMi4wMTEtNTQuNzYzLDEwMy45NzktNjYuODgsMTMxLjg4M2MtMi4zMjUsNS40MTksMC4xNDksMTEuNjkxLDUuNTQ3LDE0LjAzNw0KCQkJYzUuMzc2LDIuMzQ3LDExLjY5MS0wLjEwNywxNC4wMzctNS41MjVjMjQuMDg1LTU1LjQ0NSw1My41NDctMTE3LjA1Niw2MS4xMi0xMjQuMTE3YzguMjEzLTYuOTc2LDQyLjk2NS0xOC43OTUsMTIxLjA4OC0xOC43OTUNCgkJCWgyMS4zMzNjNzguMTIzLDAsMTEyLjg3NSwxMS44MTksMTIxLjA0NSwxOC43NTJjNy42MTYsNy4xMDQsMzcuMDc3LDY4LjY5Myw2MS4xNjMsMTI0LjE2YzEuNzQ5LDQuMDMyLDUuNjk2LDYuNDIxLDkuNzkyLDYuNDIxDQoJCQljMS40MDgsMCwyLjg4LTAuMjc3LDQuMjQ1LTAuODc1QzQ2OC4zMDksMjIwLjc3OSw0NzAuNzg0LDIxNC40ODUsNDY4LjQ1OSwyMDkuMDg4eiIvPg0KCTwvZz4NCjwvZz4NCjxnPg0KCTxnPg0KCQk8cGF0aCBkPSJNNDgwLDM3My4zMzNjLTUuODg4LDAtMTAuNjY3LDQuNzc5LTEwLjY2NywxMC42Njd2NDIuNjY3YzAsNS44ODgtNC44LDEwLjY2Ny0xMC42NjcsMTAuNjY3aC02NA0KCQkJYy01Ljg2NywwLTEwLjY2Ny00Ljc3OS0xMC42NjctMTAuNjY3di0zMmMwLTUuODg4LTQuNzc5LTEwLjY2Ny0xMC42NjctMTAuNjY3Yy01Ljg4OCwwLTEwLjY2Nyw0Ljc3OS0xMC42NjcsMTAuNjY3djMyDQoJCQljMCwxNy42NDMsMTQuMzU3LDMyLDMyLDMyaDY0YzE3LjY0MywwLDMyLTE0LjM1NywzMi0zMlYzODRDNDkwLjY2NywzNzguMTEyLDQ4NS44ODgsMzczLjMzMyw0ODAsMzczLjMzM3oiLz4NCgk8L2c+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8L3N2Zz4NCg==" alt="car"/>
                         <p>All ranges of cars at low prices per day</p>
                     </div>
                 </section>
                 <hr>
             </article>
         </main>
+
+        <script>
+            const menu = document.querySelector('#menu');
+            const main = document.querySelector('main');
+            const drawer = document.querySelector('nav');
+
+            menu.addEventListener('click', function(e) {
+                drawer.classList.toggle('open');
+                e.stopPropagation();
+            });
+            main.addEventListener('click', function() {
+                drawer.classList.remove('open');
+            });
+        </script>
+
         <footer>
             <p>Join us</p>
-            <div>
+            <div class="social_net">
                 <i class="fa fa-facebook"></i>
                 <i class="fa fa-instagram"></i>
                 <i class="fa fa-twitter"></i>
