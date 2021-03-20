@@ -16,23 +16,23 @@
     margin: 0.5em;
 }
 
-.fa-route{
-    font-size: 40px;
+.header_inner img{
+    width: 15%;
 }
 
 .header_title{
-    font-size: 2em;
+    font-size: 10vw;
     margin-left: 1em;
 }
 
 .header_menu{
     position: absolute;
     right: 0;
-    margin-right: 0.5em;
+    padding-right: 0.5em;
 }
 
 .header_menu svg{
-    width: 32px;
+    width: 10vw;
     fill: #e0e0e0;
 }
 
@@ -68,46 +68,60 @@
 
 .nav_list li a{
     text-decoration: none;
-    font-size: 1.2em;
+    font-size: 4vw;
 }
 
-.main_image{
+.box{
     width: 100%;
+    background-color: aquamarine;
 }
 
-.main_image img{
+.box div.thumbnail img{
     width: 100%;
+    display: block;
 }
 
-.centered{
+.thumbnail{
+    position: relative;
+    display: flex;
+    background-color: aquamarine;
+}
+
+.thumbnail section.caption{
+    width: 100%;
     background: rgba(0,0,0,.4);
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 100%;
+    text-align: center;
     color: white;
-    padding: 0.5em;
+    font-weight: bold;
 }
 
-.centered h1{
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
-    font-size: 1.8em;
+.thumbnail h1{
+    padding-top: 0.3em;
+    padding-bottom: 0.3em;
+    font-size: 10vw;
     text-align: center;
 }
 
-.centered p{
-    font-size: 1em;
+.thumbnail p{
+    font-size: 5vw;
 }
 
 .centerButton{
     display: flex;
     justify-content: center;
+
 }
 
-.centered button{
+.thumbnail button.learn_more{
     align-items: center;
+    background-color: mediumorchid;
+    padding: 0.3em;
+    color: white;
+    font-size: 3vw;
 }
 
 article.container{
@@ -119,6 +133,7 @@ article.container{
 .container h2{
     text-align: center;
     margin-bottom: 1em;
+    font-size: 5vw;
 }
 
 .card_container{
@@ -137,8 +152,12 @@ div.card{
 }
 
 div.card img{
-    width: 80%;
+    width: 60%;
     margin-bottom: 1em;
+}
+
+div.card p{
+    font-size: 4vw;
 }
 
 footer{
@@ -148,7 +167,15 @@ footer{
     text-align: center;
 }
 
+footer p{
+    font-size: 5vw;
+}
+
 div.social_net i.fa{
-    font-size: 1.5em;
+    font-size: 5vw;
     padding: 0.5em;
+}
+
+footer small{
+    font-size: 3vw;
 }
