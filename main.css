@@ -2,37 +2,28 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-size: 16px;
 }
 
 .header{
-    min-height: 56px;
-    display: flex;
-    width: 100%;
-}
-
-.header_inner{
     width: 100%;
     display: flex;
-    margin: 0.5em;
+    justify-content: space-around;
+    align-items: center;
 }
 
-.header_inner img{
-    width: 15%;
+header img.logo{
+    width: 3rem;
+    height: auto;
+    padding: 0.5rem 0;
 }
 
 .header_title{
-    font-size: 10vw;
-    margin-left: 1em;
-}
-
-.header_menu{
-    position: absolute;
-    right: 0;
-    padding-right: 0.5em;
+    font-size: 2rem;
 }
 
 .header_menu svg{
-    width: 10vw;
+    width: 2rem;
     fill: #e0e0e0;
 }
 
@@ -68,99 +59,54 @@
 
 .nav_list li a{
     text-decoration: none;
-    font-size: 4vw;
 }
 
-.box{
-    width: 100%;
-    background-color: aquamarine;
-}
-
-.box div.thumbnail img{
-    width: 100%;
-    display: block;
-}
-
-.thumbnail{
-    position: relative;
-    display: flex;
-    background-color: aquamarine;
-}
-
-.thumbnail section.caption{
-    width: 100%;
-    background: rgba(0,0,0,.4);
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+section.box{
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),
+    url("https://cdn.stocksnap.io/img-thumbs/960w/landscape-mountain_B028VXG7BC.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 70vh;
     text-align: center;
     color: white;
-    font-weight: bold;
+    padding-top: 14rem;
 }
 
-.thumbnail h1{
-    padding-top: 0.3em;
-    padding-bottom: 0.3em;
-    font-size: 10vw;
-    text-align: center;
+section.box h1{
+    font-size: 2rem;
+    padding: 0.5rem;
 }
 
-.thumbnail p{
-    font-size: 5vw;
-}
-
-.centerButton{
-    display: flex;
-    justify-content: center;
-
-}
-
-.thumbnail button.learn_more{
-    align-items: center;
+section.box button{
+    font-size: 0.8rem;
     background-color: mediumorchid;
-    padding: 0.3em;
     color: white;
-    font-size: 3vw;
+    padding: 0.5rem;
 }
 
-article.container{
-    margin-top: 1em;
-    margin-bottom: 1em;
-    width: 100%;
-}
-
-.container h2{
+.article h2{
+    font-size: 1.5rem;
     text-align: center;
-    margin-bottom: 1em;
-    font-size: 5vw;
+    padding-top: 2.5rem;
 }
 
-.card_container{
+.article section.container{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    margin-bottom: 2em;
 }
 
-div.card{
-    width: 30%;
-    display: flex;
-    flex-direction: column;
+section.card{
+    width: 8rem;
+    margin: 1.5rem;
     text-align: center;
-    margin: 0 0.5em;
-    align-items: center;
 }
 
-div.card img{
-    width: 60%;
-    margin-bottom: 1em;
+section.card img{
+    width: 5rem;
 }
 
-div.card p{
-    font-size: 4vw;
-}
-
-footer{
+.footer{
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -168,14 +114,16 @@ footer{
 }
 
 footer p{
-    font-size: 5vw;
+    margin-top: 1rem;
+    font-size: 1.5rem;
 }
 
-div.social_net i.fa{
-    font-size: 5vw;
-    padding: 0.5em;
+section.social_net i.fa{
+    font-size: 1.5rem;
+    padding: 1rem;
 }
 
 footer small{
-    font-size: 3vw;
+    font-size: 0.5rem;
+    margin-bottom: 1rem;
 }
