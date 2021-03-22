@@ -147,7 +147,7 @@ div.card{
     display: flex;
     flex-direction: column;
     text-align: center;
-    margin: 0em 0.5em 0em 0.5em;
+    margin: 0 0.5em;
     align-items: center;
 }
 
